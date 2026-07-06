@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: "Myfont";
+    src: url("/fonts/Myfont.otf") format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Myfont", serif; /*change*/
+}
+body{
+    min-height: 100vh;
+    background-image: url("backg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#text-source{
+    visibility: hidden;
+    position: absolute;
+}
+.my-font{
+    font-family: "Myfont", serif;
+    font-size: 100px;
+    color:  rgb(251, 230, 48);
+}
+.letter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Myfont", serif;
+    font-size: 100px;
+    font-weight: 600;
+    color: rgb(251, 230, 48);
+    user-select: none;
+    will-change: transform;
+    white-space: pre;
+}
